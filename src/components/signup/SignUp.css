@@ -59,24 +59,6 @@ body {
   }
 }
 
-.sign-up-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 600 !important;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  background-color: #f2cc15 !important;
-  font-family: "Quicksand", sans-serif !important;
-  border-color: #f2cc15 !important;
-  color: #16254c !important;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.sign-up-button:hover {
-  background-color: #f2cc15 !important;
-}
-
 .terms {
   font-weight: 700;
   text-decoration: underline;

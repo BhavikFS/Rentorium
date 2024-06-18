@@ -1,0 +1,12 @@
+.primary-button {
+    border: none;
+    cursor: pointer;
+    background-color: #f2cc15 !important;
+    font-family: "Quicksand", sans-serif !important;
+    border-color: #f2cc15 !important;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .primary-button:hover {
+    background-color: #f2cc15 !important;
+  }

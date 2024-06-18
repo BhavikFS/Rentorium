@@ -48,8 +48,14 @@ const SignUpForm = () => {
         <div className="d-flex justify-content-center">
           <CustomButton
             type="submit"
-            className="mt-2 sign-up-button"
-            style={{ width: "30%" }}
+            className="mt-2 primary-button"
+            style={{
+              width: "30%",
+              color: "#16254c",
+              borderRadius: "0.25rem",
+              fontWeight: "600px",
+              padding: "0.5rem 1rem"
+            }}
             label="Sign Up"
           />
         </div>
