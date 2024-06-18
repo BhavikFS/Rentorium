@@ -16,9 +16,7 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/" className="ms-2 nav-title">
           <img
             src={logo}
-            width="48.75"
-            height="50"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top nav-logo"
             alt="Logo"
           />
           {" Rentorium"}
