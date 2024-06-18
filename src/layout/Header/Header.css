@@ -1,0 +1,19 @@
+.text-blue {
+  font-weight: 400;
+  font-size: 15px;
+  color: #373956 !important; /* Use !important to ensure the color is applied */
+}
+.text-blue .nav-link,
+.dropdown-item {
+  color: #373956 !important; /* Use !important to ensure the color is applied */
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 15px !important;
+}
+
+.nav-title {
+  color: #373956 !important; /* Use !important to ensure the color is applied */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 31px !important;
+}
