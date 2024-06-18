@@ -6,7 +6,7 @@ import "./Header.css";
 
 const HeaderV2 = () => {
   return (
-    <Navbar expand="lg" className="header-container">
+    <Navbar expand="lg" className="header-container d-flex justify-content-center align-items-center">
       <Navbar.Brand as={Link} to="/" className="ms-2 nav-title">
         <img
           src={logo}
@@ -18,7 +18,11 @@ const HeaderV2 = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link className="text-blue" href="#home">
+          <Nav.Link
+            className="text-blue"
+            href="#home"
+            style={{ fontSize: "15px" }}
+          >
             Home
           </Nav.Link>
           <NavDropdown
