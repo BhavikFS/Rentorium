@@ -6,7 +6,7 @@ import "./Header.css";
 
 const HeaderV2 = () => {
   return (
-    <Navbar expand="lg" className="header-container d-flex justify-content-center align-items-center">
+    <Navbar expand="lg" className="header-container">
       <Navbar.Brand as={Link} to="/" className="ms-2 nav-title">
         <img
           src={logo}
