@@ -101,10 +101,30 @@
   border-radius: 10px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-image-section1 {
+  width: 350px;
+  }
+}
+
 .home-image-section2 {
   width: 630px;
   height: 400px;
   border-radius: 10px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  .home-container-left-section2 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-container-left-section2 {
+    display: flex;
+  }
 }
 
 /* Small devices (mobiles) */
@@ -164,46 +184,22 @@
     font-size: 25px;
   }
 }
-.home-mission-section2 {
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .home-right-container-section2 {
+  position: relative;
+  left: 200px
+  }
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-mission-section1 {
   color: #27563a;
   font-weight: 600;
   font-size: 20px;
-}
-
-.image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.home-image-section3 {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding-left: 65px
-}
-
-.card-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%; /* Adjust the width as needed */
-}
-
-.overlay-card {
-  background: linear-gradient(
-    335.77deg,
-    rgba(255, 255, 255, 0.6) -12.34%,
-    rgba(255, 255, 255, 0) 223.99%,
-    rgba(255, 255, 255, 0.234757) 223.99%
-  );
-  opacity: 0.9; /* Adjust the opacity as needed */
-  border: none; /* Optional: remove card border */
 }
