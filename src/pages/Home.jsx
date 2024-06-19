@@ -1,10 +1,10 @@
-// App.js
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "./Home.css";
 import VerifiedAccount from "../assets/images/verified-account.png";
 import CustomButton from "../components/common/CustomButton";
 import HomeSection1 from "../assets/images/home-section1.png";
 import HomeSection2 from "../assets/images/home-section2.png";
+import HomeSection3 from "../assets/images/home-section3.png";
 
 const Home = () => {
   return (
@@ -66,7 +66,7 @@ const Home = () => {
       </Container>
       <Container fluid className="my-0 py-2">
         <Row className="home-container-section2">
-        <Col md={6} className="position-relative">
+          <Col md={6} className="position-relative">
             <div>
               <img
                 className="home-image-section2 d-none d-md-flex"
@@ -76,12 +76,16 @@ const Home = () => {
             </div>
           </Col>
           <Col md={6}>
-          <p className="home-mission-section1">Our Mission</p>
+            <p className="home-mission-section2">Our Mission</p>
             <h2 className="home-text-title-section2">
-            Streamlining Rentals, Empowering Both Sides
+              Streamlining Rentals, Empowering Both Sides
             </h2>
             <p className="home-text-section2">
-            Rentorium provides a multifaceted solution catering to the needs of both tenants and landlords, consolidating every aspect of the rental journey into one user-friendly platform. From property listings and tenant screening to lease management and maintenance requests.
+              Rentorium provides a multifaceted solution catering to the needs
+              of both tenants and landlords, consolidating every aspect of the
+              rental journey into one user-friendly platform. From property
+              listings and tenant screening to lease management and maintenance
+              requests.
             </p>
             <div className="centered-button">
               {" "}
@@ -100,7 +104,36 @@ const Home = () => {
               />
             </div>
           </Col>
-          
+        </Row>
+      </Container>
+      <Container fluid className="my-0 py-2">
+        <Row className="home-container-section3">
+          <Col className="position-relative">
+            <div className="image-container">
+              <img
+                className="home-image-section3"
+                src={HomeSection3}
+                alt="home-section3"
+              />
+              <div className="card-container">
+                <Card className="overlay-card gradient-card">
+                  <Card.Body>
+                    <Card.Title style={{ color: "black" }}>
+                      Reviews that drive excellence
+                    </Card.Title>
+                    <Card.Text>
+                      At Rentorium, we believe in the power of shared
+                      experiences to improve the renting process for everyone
+                      involved. This means that we understand the value of
+                      collaboration and communication between renters and
+                      landlords.
+                    </Card.Text>
+                    <CustomButton label="Learn More" />
+                  </Card.Body>
+                </Card>
+              </div>
+            </div>
+          </Col>
         </Row>
       </Container>
     </>
