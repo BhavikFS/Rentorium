@@ -1,0 +1,66 @@
+.nav-logo {
+    height: 30px !important; /* Default height for mobile */
+    width: 28.75px !important; /* Default width for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    /* Medium devices (tablets, 768px and up) */
+    .nav-logo {
+      height: 40px !important; /* Adjust height for tablets */
+      width: 38.75px !important; /* Adjust width for tablets */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Large devices (desktops, 992px and up) */
+    .nav-logo {
+      height: 50px !important; /* Adjust height for large screens */
+      width: 48.75px !important; /* Adjust width for large screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Extra large devices (large desktops, 1200px and up) */
+    .nav-logo {
+      height: 60px !important; /* Adjust height for extra large screens */
+      width: 58.75px !important; /* Adjust width for extra large screens */
+    }
+  }
+
+  .nav-title {
+    color: #373956 !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px !important; /* Default font size for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    /* Medium devices (tablets, 768px and up) */
+    .nav-title {
+      font-size: 24px !important; /* Adjust font size for tablets */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Large devices (desktops, 992px and up) */
+    .nav-title {
+      font-size: 31px !important; /* Adjust font size for large screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* Extra large devices (large desktops, 1200px and up) */
+    .nav-title {
+      font-size: 36px !important; /* Adjust font size for extra large screens */
+    }
+  }
+
+  .footer-text-section {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+
+  .footer-newsletter-title {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }

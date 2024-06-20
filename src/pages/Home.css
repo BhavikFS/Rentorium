@@ -203,3 +203,30 @@
   font-weight: 600;
   font-size: 20px;
 }
+
+.home-image-section3 {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-left: 30px
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Adjust the width as needed */
+}
+
+.overlay-card {
+  background: linear-gradient(
+    335.77deg,
+    rgba(255, 255, 255, 0.6) -12.34%,
+    rgba(255, 255, 255, 0) 223.99%,
+    rgba(255, 255, 255, 0.234757) 223.99%
+  );
+  opacity: 0.9; /* Adjust the opacity as needed */
+  border: none; /* Optional: remove card border */
+}
+
