@@ -1,5 +1,6 @@
 import Header from "./layout/header/Header";
 import SignUpPage from "./pages/SignUp";
+import LoginPage from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./components/common/common.css";
@@ -11,6 +12,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/register" element={<SignUpPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
