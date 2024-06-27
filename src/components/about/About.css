@@ -1,0 +1,29 @@
+.about-image-wrapper {
+  width: 100%;
+  overflow: hidden; /* Ensures no extra space */
+  padding: 0px !important;
+}
+
+.about-image-section2 {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space */
+}
+
+.about-title {
+  color: #16254c !important;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.about-description {
+  color: #16254c;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.about-welcome-text {
+    color: #16254c;
+    font-size: 25px;
+    font-weight: 600;
+  }

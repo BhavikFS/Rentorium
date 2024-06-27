@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
-import PropTypes from 'prop-types'
-const LeftSection = ({image}) => {
+import PropTypes from "prop-types";
+const LeftSection = ({ image }) => {
   return (
     <Col md={7}>
       <img

@@ -6,7 +6,7 @@ import LoginForm from "./LoginForm";
 
 const Login = () => {
   return (
-    <Row>
+    <Row className="login-container">
       <LeftSection image={LoginImage} />
       <LoginForm />
     </Row>

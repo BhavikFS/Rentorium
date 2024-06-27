@@ -2,6 +2,17 @@ body {
   overflow-x: hidden;
 }
 
+/* .login-container{
+  height: 90vh;
+} */
+
+.custom-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+}
+
 .nav-title {
   color: #16254c !important;
   font-family: "Poppins", sans-serif;
@@ -63,17 +74,21 @@ body {
   font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
+  color: #373956;
 }
 
-p {
+.new-user-link {
+  font-weight: 700;
+  cursor: pointer;
   color: #373956;
 }
 
 .page-title {
   color: #373956;
+  font-size: 18px;
 }
 
 .form-description {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
 }

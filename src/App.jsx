@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./components/common/common.css";
 import Home from "./pages/Home";
+import ForgotPasswordPage from "./pages/ForgotPassword";
+import AboutUsPage from "./pages/AboutUs";
 const App = () => {
   return (
     <div>
@@ -13,6 +15,8 @@ const App = () => {
         <Routes>
           <Route path="/register" element={<SignUpPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
