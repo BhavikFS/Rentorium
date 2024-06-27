@@ -5,8 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./components/common/common.css";
 import Home from "./pages/Home";
+
 import ForgotPasswordPage from "./pages/ForgotPassword";
 import AboutUsPage from "./pages/AboutUs";
+
+import UserProfilePage from "./pages/UserProfile";
+
 const App = () => {
   return (
     <div>
@@ -18,6 +22,8 @@ const App = () => {
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/" element={<Home />} />
+          <Route path="/user-profile" element={<UserProfilePage />} />
+
         </Routes>
       </Router>
     </div>
