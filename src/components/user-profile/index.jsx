@@ -2,139 +2,158 @@ import "./Profile.css"; // Import your custom CSS file for additional styles
 import profilePic from "./user.png";
 import propertyImage1 from "./addimg.png"; // Sample image 1
 import propertyImage2 from "./plus.png"; // Sample image 2
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 const UserProfile = () => {
   return (
-    <div className="container mt-2">
-      <div className="row align-items-center">
-        <div className="col-12 col-md-2 text-center text-md-left">
+    <Container className="mt-2">
+      <Row className="align-items-center">
+        <Col xs={12} md={2} className="text-center text-md-left">
           <div className="profile-picture mb-3 mb-md-0">
             <img
               src={profilePic}
               alt="Profile"
-              className="rounded-circle img-fluid profile-picture"
+              className="rounded-circle img-fluid"
+              style={{ width: "150px", height: "150px", marginLeft: "-20%" }}
             />
           </div>
-        </div>
-        <div className="col-12 col-md-3">
-          <div className="form-group mb-3 mb-md-0">
-            <label htmlFor="name" className="text-color-custum">Name of Landlord *</label>
-            <input
+        </Col>
+        <Col xs={12} md={3}>
+          <Form.Group className="mb-3 mb-md-0">
+            <Form.Label htmlFor="name" className="text-color-custum">
+              Name of Landlord *
+            </Form.Label>
+            <Form.Control
               type="text"
-              className="form-control"
               id="name"
               placeholder="Enter Name *"
               style={{ width: "100%" }}
             />
-          </div>
-        </div>
-        <div className="col-12 col-md-3">
-          <div className="form-group mb-3 mb-md-0">
-            <label htmlFor="email" className="text-color-custum">Email *</label>
-            <input
+          </Form.Group>
+        </Col>
+        <Col xs={12} md={3}>
+          <Form.Group className="mb-3 mb-md-0">
+            <Form.Label htmlFor="email" className="text-color-custum">
+              Email *
+            </Form.Label>
+            <Form.Control
               type="email"
-              className="form-control"
               id="email"
               placeholder="Enter Email *"
               style={{ width: "100%" }}
             />
-          </div>
-        </div>
-        <div className="col-12 col-md-3">
-          <div className="form-group mb-3 mb-md-0">
-            <label htmlFor="mobile" className="text-color-custum">Mobile Number *</label>
-            <input
+          </Form.Group>
+        </Col>
+        <Col xs={12} md={3}>
+          <Form.Group className="mb-3 mb-md-0">
+            <Form.Label htmlFor="mobile" className="text-color-custum">
+              Mobile Number *
+            </Form.Label>
+            <Form.Control
               type="tel"
-              className="form-control"
               id="mobile"
               placeholder="Enter Mobile Number *"
               style={{ width: "100%" }}
             />
-          </div>
-        </div>
-      </div>
-      
-      {/* Horizontal Line */}
+          </Form.Group>
+        </Col>
+      </Row>
+
       <hr style={{ borderTop: "1px solid #E6E6E6" }} />
 
-      {/* Property Details Section */}
-      <div className="row align-items-center mt-4">
-        <div className="col-12 col-md-6">
-          <div className="form-group mb-3 mb-md-0">
-            <label htmlFor="property-name" className="text-color-custum">Name of Property</label>
-            <input
+      <Row className="align-items-center mt-4">
+        <Col xs={12} md={6}>
+          <Form.Group className="mb-3 mb-md-0">
+            <Form.Label htmlFor="property-name" className="text-color-custum">
+              Name of Property
+            </Form.Label>
+            <Form.Control
               type="text"
-              className="form-control"
               id="property-name"
               placeholder="Enter Property Name"
               style={{ width: "100%" }}
             />
-          </div>
-        </div>
-        <div className="col-12 col-md-6 text-md-right text-center">
-          <button className="btn custum-button mt-3 mt-md-0"
+          </Form.Group>
+        </Col>
+        <Col xs={12} md={6} className="text-md-right text-center">
+          <Button
+            className="custum-button mt-3 mt-md-0"
             style={{
               backgroundColor: "#F2CC15",
               fontWeight: "500",
               color: "#16254C",
-            }}>
-            <span>+</span> <span style={{ textDecoration: "underline" }}>Add Property Listing</span>
-          </button>
-        </div>
-      </div>
+            }}
+          >
+            <span>+</span>{" "}
+            <span style={{ textDecoration: "underline" }}>
+              Add Property Listing
+            </span>
+          </Button>
+        </Col>
+      </Row>
 
-      {/* Address Section */}
-      <div className="row align-items-center mt-4">
-        <div className="col-12">
-          <label htmlFor="address1" className="text-color-custum">Address</label>
-        </div>
-        <div className="col-12 col-md-6">
-          <div className="form-group mb-3 mb-md-0">
-            <input
+      <Row className="align-items-center mt-4">
+        <Col xs={12}>
+          <Form.Label htmlFor="address1" className="text-color-custum">
+            Address
+          </Form.Label>
+        </Col>
+        <Col xs={12} md={6}>
+          <Form.Group className="mb-3 mb-md-0">
+            <Form.Control
               type="text"
-              className="form-control"
               id="address1"
               placeholder="Enter Address"
               style={{ width: "100%" }}
             />
-          </div>
-        </div>
-        <div className="col-12 col-md-6">
-          <div className="form-group mb-3 mb-md-0">
-            <input
+          </Form.Group>
+        </Col>
+        <Col xs={12} md={6}>
+          <Form.Group className="mb-3 mb-md-0">
+            <Form.Control
               type="text"
-              className="form-control"
               id="address2"
               placeholder="Enter Address"
               style={{ width: "100%" }}
             />
-          </div>
-        </div>
-      </div>
+          </Form.Group>
+        </Col>
+      </Row>
 
       <hr style={{ borderTop: "1px solid #E6E6E6" }} />
 
-      {/* Add Property Listing Section */}
       <h2 className="mt-4 text-color-custum">Add Property Listing</h2>
-      
-      <div className="row align-items-center mt-3">
-        <div className="col-12 d-flex justify-content-start">
-          <img src={propertyImage1} alt="Property 1" className="img-fluid property-image p-3" />
-          <img src={propertyImage2} alt="Property 2" className="img-fluid property-image p-3" />
-        </div>
-      </div>
 
-      {/* Submit Button */}
-      <div className="row justify-content-center mt-4 mb-4">
-        <div className="col-12 text-center">
-          <button className="btn custum-button" style={{ backgroundColor: "#F2CC15",
+      <Row className="align-items-center mt-3">
+        <Col xs={12} className="d-flex justify-content-start">
+          <img
+            src={propertyImage1}
+            alt="Property 1"
+            className="img-fluid property-image p-3"
+          />
+          <img
+            src={propertyImage2}
+            alt="Property 2"
+            className="img-fluid property-image p-3"
+          />
+        </Col>
+      </Row>
+
+      <Row className="justify-content-center mt-4 mb-4">
+        <Col xs={12} className="text-center">
+          <Button
+            className="custum-button"
+            style={{
+              backgroundColor: "#F2CC15",
               fontWeight: "500",
-              color: "#16254C", }}>
+              color: "#16254C",
+            }}
+          >
             Submit
-          </button>
-        </div>
-      </div>
-    </div>
+          </Button>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

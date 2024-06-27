@@ -1,3 +1,4 @@
+/* Home.css */
 .home-gradient-background-section1 {
   background: linear-gradient(
     252.91deg,
@@ -7,13 +8,11 @@
   padding: 50px 0;
 }
 
-/* Small devices (mobiles) */
 .home-container-section1,
 .home-container-section2 {
   padding: 0;
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home-container-section1,
   .home-container-section2 {
@@ -21,23 +20,6 @@
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .home-container-section1,
-  .home-container-section2 {
-    padding: 1.5;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .home-container-section1,
-  .home-container-section2 {
-    padding: 1.5;
-  }
-}
-
-/* Small devices (mobiles) */
 .home-text-title-section1 {
   color: #16254c;
   font-weight: 700;
@@ -45,28 +27,24 @@
   font-size: 24px;
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home-text-title-section1 {
     font-size: 31px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .home-text-title-section1 {
     font-size: 42px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .home-text-title-section1 {
     font-size: 52px;
   }
 }
 
-/* Small devices (mobiles) */
 .home-text-section1 {
   color: #13234b;
   font-weight: 500;
@@ -74,60 +52,32 @@
   font-size: 16px;
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home-text-section1 {
     font-size: 20px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .home-text-section1 {
     font-size: 23px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .home-text-section1 {
     font-size: 28px;
   }
 }
 
-.home-image-section1 {
-  width: 600px;
-  height: 400px;
+.home-image-section1,
+.home-image-section2,
+.home-image-section3 {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .home-image-section1 {
-  width: 350px;
-  }
-}
-
-.home-image-section2 {
-  width: 630px;
-  height: 400px;
-  border-radius: 10px;
-}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-  .home-container-left-section2 {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) {
-  .home-container-left-section2 {
-    display: flex;
-  }
-}
-
-/* Small devices (mobiles) */
 .home-text-title-section2 {
   color: #08110c;
   font-weight: 700;
@@ -135,28 +85,24 @@
   font-size: 18px;
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home-text-title-section2 {
     font-size: 25px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .home-text-title-section2 {
     font-size: 36px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .home-text-title-section2 {
     font-size: 46px;
   }
 }
 
-/* Small devices (mobiles) */
 .home-text-section2 {
   color: #13234b;
   font-weight: 500;
@@ -164,31 +110,21 @@
   font-size: 12px;
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .home-text-section2 {
     font-size: 18px;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .home-text-section2 {
     font-size: 20px;
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .home-text-section2 {
     font-size: 25px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-   .home-right-container-section2 {
-  position: relative;
-  left: 200px
   }
 }
 
@@ -204,19 +140,15 @@
   font-size: 20px;
 }
 
-.home-image-section3 {
-  width: 100%;
-  height: auto;
-  display: block;
-  padding-left: 30px
-}
-
 .card-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%; /* Adjust the width as needed */
+  width: 90%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .overlay-card {
@@ -226,7 +158,32 @@
     rgba(255, 255, 255, 0) 223.99%,
     rgba(255, 255, 255, 0.234757) 223.99%
   );
-  opacity: 0.9; /* Adjust the opacity as needed */
-  border: none; /* Optional: remove card border */
+  opacity: 0.9;
+  border: none;
 }
 
+@media (max-width: 767px) {
+  .card-container {
+    width: 95%;
+    height: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .overlay-card {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .home-image-section3 {
+    height: 300px !important;
+  }
+}
+
+.image-container {
+  position: relative;
+}
+
+.home-image-section3 {
+  display: block;
+  position: relative;
+}

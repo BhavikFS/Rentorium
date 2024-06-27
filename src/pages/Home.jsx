@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Container fluid className="home-gradient-background-section1 my-0 py-2">
         <Row className="home-container-section1">
-          <Col md={6}>
+          <Col md={6} className="d-flex flex-column justify-content-center">
             <h1 className="home-text-title-section1">
               Empowering renters and <br className="d-none d-sm-inline" />{" "}
               owners alike.
@@ -41,45 +41,40 @@ const Home = () => {
               Promoting sustainability for a better future
             </h6>
             <div className="centered-button">
-              {" "}
-              {/* Apply custom CSS class for centered button */}
               <CustomButton
                 className="primary-button"
                 type="button"
                 style={{
                   color: "white",
-                  width: "128px", // Adjust width as needed
-                  height: "44.3px", // Adjust height as needed
+                  width: "128px",
+                  height: "44.3px",
                   borderRadius: "50px",
-                  padding: "11px 24px", // Adjust padding as needed
+                  padding: "11px 24px",
                 }}
                 label="Sign Up"
               />
             </div>
           </Col>
-          <Col md={6} className="position-relative">
-            <div>
-              <img
-                className="home-image-section1 d-none d-md-flex"
-                src={HomeSection1}
-                alt="home-section1"
-              />
-            </div>
+          <Col md={6} className="d-flex align-items-center justify-content-center">
+            <img
+              className="home-image-section1 img-fluid"
+              src={HomeSection1}
+              alt="home-section1"
+            />
           </Col>
         </Row>
       </Container>
+
       <Container fluid className="my-0 py-2">
         <Row className="home-container-section1">
-          <Col md={6} className="home-container-left-section2y">
-            <div>
-              <img
-                className="home-image-section2 d-none d-md-flex"
-                src={HomeSection2}
-                alt="home-section2"
-              />
-            </div>
+          <Col md={6} className="d-flex align-items-center justify-content-center">
+            <img
+              className="home-image-section2 img-fluid"
+              src={HomeSection2}
+              alt="home-section2"
+            />
           </Col>
-          <Col md={6} className="home-right-container-section2">
+          <Col md={6} className="d-flex flex-column justify-content-center">
             <p className="home-mission-section1">Our Mission</p>
             <h2 className="home-text-title-section2">
               Streamlining Rentals, Empowering Both Sides
@@ -92,17 +87,15 @@ const Home = () => {
               requests.
             </p>
             <div className="centered-button">
-              {" "}
-              {/* Apply custom CSS class for centered button */}
               <CustomButton
                 className="primary-button"
                 type="button"
                 style={{
                   color: "white",
-                  width: "135px", // Adjust width as needed
-                  height: "44.3px", // Adjust height as needed
+                  width: "135px",
+                  height: "44.3px",
                   borderRadius: "50px",
-                  padding: "11px 24px", // Adjust padding as needed
+                  padding: "11px 24px",
                 }}
                 label="Learn More"
               />
@@ -110,15 +103,13 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+
       <Container fluid className="my-0 py-2">
-        <Row
-          className="home-container-section3"
-          style={{ marginRight: "15px" }}
-        >
+        <Row className="home-container-section3">
           <Col className="position-relative">
             <div className="image-container">
               <img
-                className="home-image-section3"
+                className="home-image-section3 img-fluid"
                 src={HomeSection3}
                 alt="home-section3"
               />
@@ -146,7 +137,7 @@ const Home = () => {
 
       <Container fluid className="my-0 py-2">
         <Row className="home-container-section1">
-          <Col md={6} className="home-right-container-section2">
+          <Col md={6} className="d-flex flex-column justify-content-center">
             <p className="home-mission-section1">Our Offerings</p>
             <h2 className="home-text-title-section2">Insurance Heights</h2>
             <p className="home-text-section2">
@@ -158,64 +149,61 @@ const Home = () => {
               their interests in case of unexpected events or disputes.
             </p>
             <div className="centered-button">
-              {" "}
-              {/* Apply custom CSS class for centered button */}
               <CustomButton
                 className="primary-button"
                 type="button"
                 style={{
                   color: "white",
-                  width: "135px", // Adjust width as needed
-                  height: "44.3px", // Adjust height as needed
+                  width: "135px",
+                  height: "44.3px",
                   borderRadius: "50px",
-                  padding: "11px 24px", // Adjust padding as needed
+                  padding: "11px 24px",
                 }}
                 label="Learn More"
               />
             </div>
           </Col>
-          <Col md={6} className="home-container-left-section2y">
-            <div>
-              <img
-                className="home-image-section2 d-none d-md-flex"
-                src={HomeSection4}
-                alt="home-section4"
-              />
-            </div>
+          <Col md={6} className="d-flex align-items-center justify-content-center">
+            <img
+              className="home-image-section2 img-fluid"
+              src={HomeSection4}
+              alt="home-section4"
+            />
           </Col>
         </Row>
       </Container>
+
       <Container fluid className="my-0 py-2">
         <Row className="home-container-section1">
-          <Col md={6} className="home-container-left-section2y">
-            <div>
-              <img
-                className="home-image-section2 d-none d-md-flex"
-                src={HomeSection5}
-                alt="home-section2"
-              />
-            </div>
+          <Col md={6} className="d-flex align-items-center justify-content-center">
+            <img
+              className="home-image-section2 img-fluid"
+              src={HomeSection5}
+              alt="home-section5"
+            />
           </Col>
-          <Col md={6} className="home-right-container-section2">
+          <Col md={6} className="d-flex flex-column justify-content-center">
             <p className="home-mission-section1">Near By Locations</p>
             <h2 className="home-text-title-section2">
-            You want to grow your portfolio on your terms
+              You want to grow your portfolio on your terms
             </h2>
             <p className="home-text-section2">
-            Gain valuable insights into properties and landlords from real users, helping you find your ideal rental match. This means accessing authentic feedback and experiences shared by previous tenants, which can provide you with valuable information about the property and its owner.
+              Gain valuable insights into properties and landlords from real
+              users, helping you find your ideal rental match. This means
+              accessing authentic feedback and experiences shared by previous
+              tenants, which can provide you with valuable information about the
+              property and its owner.
             </p>
             <div className="centered-button">
-              {" "}
-              {/* Apply custom CSS class for centered button */}
               <CustomButton
                 className="primary-button"
                 type="button"
                 style={{
                   color: "white",
-                  width: "135px", // Adjust width as needed
-                  height: "44.3px", // Adjust height as needed
+                  width: "135px",
+                  height: "44.3px",
                   borderRadius: "50px",
-                  padding: "11px 24px", // Adjust padding as needed
+                  padding: "11px 24px",
                 }}
                 label="Learn More"
               />
@@ -223,6 +211,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
+
       <Footer />
     </>
   );

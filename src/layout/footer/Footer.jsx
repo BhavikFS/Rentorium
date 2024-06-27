@@ -7,11 +7,10 @@ const Footer = () => {
   return (
     <footer>
       <Container fluid>
-        <Row className="p-4" style={{background: "#F6F6F6"
-}}>
-          <Col className="mx-5">
+        <Row className="p-4" style={{ background: "#F6F6F6" }}>
+          <Col md={3} className="firstFooter">
             <Stack>
-              <div className="nav-title d-none d-md-flex">
+              <div className="nav-title d-flex align-items-center">
                 <img
                   src={logo}
                   className="d-inline-block align-top nav-logo"
@@ -23,35 +22,40 @@ const Footer = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <h3 className="footer-newsletter-title">Newsletter</h3>
-              <div className="d-md-flex">
-                <Form.Control type="text" placeholder="Normal text" />
+              <Form className="d-flex">
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your email"
+                  className="me-2"
+                />
                 <CustomButton className="primary-button" label="Send" type="button" />
-              </div>
+              </Form>
             </Stack>
           </Col>
-          <Col>
-            <Nav className="mb-2" style={{fontWeight:500, fontSize:"20px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-
+          <Col md={2}>
+            <Nav className="flex-column">
+              <Nav.Link href="#" className="mb-2 footer-link-title">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+            </Nav>
           </Col>
-          <Col>
-            <Nav className="mb-2" style={{fontWeight:500, fontSize:"20px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-            <Nav className="mb-2" style={{fontWeight:400, fontSize:"16px"}}>Lorem Ipsum</Nav>
-
+          <Col md={2}>
+            <Nav className="flex-column">
+              <Nav.Link href="#" className="mb-2 footer-link-title">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+              <Nav.Link href="#" className="mb-2 footer-link">Lorem Ipsum</Nav.Link>
+            </Nav>
           </Col>
-          <Col>
-          <Col>
-            <Nav className="mb-2" style={{fontWeight:500, fontSize:"20px"}}>Lorem Ipsum</Nav>
-
-          </Col>
+          <Col md={2}>
+            <Nav className="flex-column">
+              <Nav.Link href="#" className="mb-2 footer-link-title">Lorem Ipsum</Nav.Link>
+            </Nav>
           </Col>
         </Row>
       </Container>
