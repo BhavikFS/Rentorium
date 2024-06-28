@@ -1,3 +1,4 @@
+/* Header.css */
 .header-container {
   background-color: #fff;
 }
@@ -7,6 +8,7 @@
   font-size: 15px;
   color: #373956 !important; /* Use !important to ensure the color is applied */
 }
+
 .text-blue .nav-link,
 .dropdown-item {
   color: #373956 !important; /* Use !important to ensure the color is applied */
@@ -70,4 +72,8 @@
     height: 60px !important; /* Adjust height for extra large screens */
     width: 58.75px !important; /* Adjust width for extra large screens */
   }
+}
+
+.nav-link-margin {
+  margin-right: 15px;
 }
