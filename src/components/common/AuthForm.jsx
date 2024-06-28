@@ -13,13 +13,16 @@ const AuthForm = ({
   children,
   btnClassName,
   isFooterSection = false,
-  subTitle = false
+  subTitle = false,
+  onSubmit,
+  disabled
 }) => {
   return (
     <Col md={5} className={className}>
       <Form
         className="d-flex flex-column"
         style={{ marginLeft: "15px", marginRight: "15px" }}
+        onSubmit={onSubmit}
       >
         <div className="nav-title d-none d-md-flex">
           <img
@@ -39,6 +42,7 @@ const AuthForm = ({
         {children}
         <div className="d-flex justify-content-center">
           <CustomButton
+          disabled={disabled}
             type="submit"
             className={`mt-2 primary-button ${btnClassName}`}
             style={btnStyle}
@@ -47,12 +51,12 @@ const AuthForm = ({
         </div>
         {isFooterSection && (
           <>
-            <Link className="mt-3 d-flex justify-content-center terms">
+            <Link to="/forgot-password" className="mt-3 d-flex justify-content-center terms">
               Forgot Password?
             </Link>
             <div className="mt-3 d-flex justify-content-center">
               <p className=" new-user-link">New User?</p>
-              <Link style={{ marginLeft: "4px" }} className="terms">
+              <Link to="/register" style={{ marginLeft: "4px" }} className="terms">
                 SIGN UP
               </Link>
             </div>
@@ -73,6 +77,8 @@ AuthForm.propTypes = {
   btnStyle: PropTypes.object,
   btnLabel: PropTypes.string.isRequired,
   children: PropTypes.node,
+  onSubmit: PropTypes.func.isRequired,
+  disabled: PropTypes.bool
 };
 
 export default AuthForm;

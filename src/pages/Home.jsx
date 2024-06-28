@@ -9,8 +9,10 @@ import HomeSection3 from "../assets/images/home-section3.png";
 import HomeSection4 from "../assets/images/home-section4.png";
 import HomeSection5 from "../assets/images/home-section5.png";
 import Footer from "../layout/footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Container fluid className="home-gradient-background-section1 my-0 py-2">
@@ -42,6 +44,7 @@ const Home = () => {
             </h6>
             <div className="centered-button">
               <CustomButton
+                clickHandler={() => navigate("/register")}
                 className="primary-button"
                 type="button"
                 style={{
@@ -55,7 +58,10 @@ const Home = () => {
               />
             </div>
           </Col>
-          <Col md={6} className="d-flex align-items-center justify-content-center">
+          <Col
+            md={6}
+            className="d-flex align-items-center justify-content-center"
+          >
             <img
               className="home-image-section1 img-fluid"
               src={HomeSection1}
@@ -67,7 +73,10 @@ const Home = () => {
 
       <Container fluid className="my-0 py-2">
         <Row className="home-container-section1">
-          <Col md={6} className="d-flex align-items-center justify-content-center">
+          <Col
+            md={6}
+            className="d-flex align-items-center justify-content-center"
+          >
             <img
               className="home-image-section2 img-fluid"
               src={HomeSection2}
@@ -142,9 +151,9 @@ const Home = () => {
             <h2 className="home-text-title-section2">Insurance Heights</h2>
             <p className="home-text-section2">
               Understanding insurance is vital for both tenants and landlords.
-              Renters insurance protects tenants belongings and liability,
-              while landlord insurance safeguards property owners from risks
-              like damage and loss of rental income. Knowing the importance of
+              Renters insurance protects tenants belongings and liability, while
+              landlord insurance safeguards property owners from risks like
+              damage and loss of rental income. Knowing the importance of
               insurance helps both parties make informed decisions to protect
               their interests in case of unexpected events or disputes.
             </p>
@@ -163,7 +172,10 @@ const Home = () => {
               />
             </div>
           </Col>
-          <Col md={6} className="d-flex align-items-center justify-content-center">
+          <Col
+            md={6}
+            className="d-flex align-items-center justify-content-center"
+          >
             <img
               className="home-image-section2 img-fluid"
               src={HomeSection4}
@@ -175,7 +187,10 @@ const Home = () => {
 
       <Container fluid className="my-0 py-2">
         <Row className="home-container-section1">
-          <Col md={6} className="d-flex align-items-center justify-content-center">
+          <Col
+            md={6}
+            className="d-flex align-items-center justify-content-center"
+          >
             <img
               className="home-image-section2 img-fluid"
               src={HomeSection5}
